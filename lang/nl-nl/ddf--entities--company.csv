@@ -1,0 +1,3 @@
+company,name,country,region,is--english_speaking,is--foundation
+mic,Microsoft,Verenigde Staten van Amerika,america,TRUE,FALSE
+gap,Gapminder,Zweden,europe,TRUE,TRUE
