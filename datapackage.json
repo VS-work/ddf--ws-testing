@@ -29,6 +29,9 @@
           },
           {
             "name": "domain"
+          },
+          {
+            "name": "additional_column"
           }
         ],
         "primaryKey": "concept"
@@ -158,7 +161,7 @@
             "name": "company_size"
           },
           {
-            "name": "full_name"
+            "name": "full_name_changed"
           },
           {
             "name": "is--company_size"
@@ -183,6 +186,9 @@
           },
           {
             "name": "region"
+          },
+          {
+            "name": "additional_column"
           },
           {
             "name": "is--english_speaking"
@@ -218,7 +224,7 @@
             "name": "region"
           },
           {
-            "name": "full_name"
+            "name": "full_name_changed"
           }
         ],
         "primaryKey": "region"
@@ -446,6 +452,15 @@
         "primaryKey": [
           "company"
         ],
+        "value": "additional_column",
+        "resources": [
+          "company"
+        ]
+      },
+      {
+        "primaryKey": [
+          "company"
+        ],
         "value": "country",
         "resources": [
           "company"
@@ -455,7 +470,7 @@
         "primaryKey": [
           "company"
         ],
-        "value": "full_name",
+        "value": "full_name_changed",
         "resources": [
           "company--company_size"
         ]
@@ -509,7 +524,7 @@
         "primaryKey": [
           "company_size"
         ],
-        "value": "full_name",
+        "value": "full_name_changed",
         "resources": [
           "company--company_size"
         ]
@@ -521,6 +536,15 @@
         "value": "is--company_size",
         "resources": [
           "company--company_size"
+        ]
+      },
+      {
+        "primaryKey": [
+          "english_speaking"
+        ],
+        "value": "additional_column",
+        "resources": [
+          "company"
         ]
       },
       {
@@ -564,6 +588,15 @@
           "english_speaking"
         ],
         "value": "region",
+        "resources": [
+          "company"
+        ]
+      },
+      {
+        "primaryKey": [
+          "foundation"
+        ],
+        "value": "additional_column",
         "resources": [
           "company"
         ]
@@ -626,13 +659,22 @@
         "primaryKey": [
           "region"
         ],
-        "value": "full_name",
+        "value": "full_name_changed",
         "resources": [
           "region"
         ]
       }
     ],
     "concepts": [
+      {
+        "primaryKey": [
+          "concept"
+        ],
+        "value": "additional_column",
+        "resources": [
+          "ddf--concepts"
+        ]
+      },
       {
         "primaryKey": [
           "concept"
