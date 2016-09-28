@@ -1,4 +1,4 @@
-company,name,country,region,is--english_speaking,is--foundation
-mic,Microsoft,United States of America,america,TRUE,FALSE
-gap,Gapminder,Sweden,europe,TRUE,TRUE
-valor,Valor Sotware,Ukraine,europe,FALSE,FALSE
+company,name,country,region,additional_column,is--english_speaking,is--foundation
+mic,Microsoft,United States of America,america,any text 1,TRUE,FALSE
+gap,Gapminder,Sweden,europe,any text 2,TRUE,TRUE
+valor,Valor Sotware,Ukraine,europe,,FALSE,FALSE
