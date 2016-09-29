@@ -1,3 +1,5 @@
 company,name,country,region,additional_column,is--english_speaking,is--foundation
 mic,Microsoft,Amerikas forente stater van Amerika,america,any text 1,TRUE,FALSE
+xsoft,XSoft,Turkije,asia,,FALSE,FALSE
+gap,Gapminder,Zweden,europe,any text 2,TRUE,TRUE
 valor,Valor programvare,Ukraina,europe,,FALSE,FALSE
