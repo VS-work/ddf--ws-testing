@@ -126,6 +126,37 @@
       }
     },
     {
+      "path": "ddf--datapoints--meeting_type--popularity--methodology--by--company--project--anno.csv",
+      "name": "meeting_type--popularity--methodology--by--company--project--anno",
+      "schema": {
+        "fields": [
+          {
+            "name": "company"
+          },
+          {
+            "name": "project"
+          },
+          {
+            "name": "anno"
+          },
+          {
+            "name": "meeting_type"
+          },
+          {
+            "name": "popularity"
+          },
+          {
+            "name": "methodology"
+          }
+        ],
+        "primaryKey": [
+          "company",
+          "project",
+          "anno"
+        ]
+      }
+    },
+    {
       "path": "ddf--entities--company--company_scale.csv",
       "name": "company--company_scale",
       "schema": {
@@ -237,6 +268,39 @@
       {
         "primaryKey": [
           "anno",
+          "company",
+          "project"
+        ],
+        "value": "meeting_type",
+        "resources": [
+          "meeting_type--popularity--methodology--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "company",
+          "project"
+        ],
+        "value": "methodology",
+        "resources": [
+          "meeting_type--popularity--methodology--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "company",
+          "project"
+        ],
+        "value": "popularity",
+        "resources": [
+          "meeting_type--popularity--methodology--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
           "english_speaking"
         ],
         "value": "company_scale",
@@ -263,6 +327,39 @@
         "value": "lines_of_code",
         "resources": [
           "lines_of_code--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "english_speaking",
+          "project"
+        ],
+        "value": "meeting_type",
+        "resources": [
+          "meeting_type--popularity--methodology--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "english_speaking",
+          "project"
+        ],
+        "value": "methodology",
+        "resources": [
+          "meeting_type--popularity--methodology--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "english_speaking",
+          "project"
+        ],
+        "value": "popularity",
+        "resources": [
+          "meeting_type--popularity--methodology--by--company--project--anno"
         ]
       },
       {
