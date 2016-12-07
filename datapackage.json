@@ -126,8 +126,8 @@
       }
     },
     {
-      "path": "ddf--datapoints--meeting_type--popularity--methodology--by--company--project--anno.csv",
-      "name": "meeting_type--popularity--methodology--by--company--project--anno",
+      "path": "ddf--datapoints--meeting_style--popular_appeal--methodology--by--company--project--anno.csv",
+      "name": "meeting_style--popular_appeal--methodology--by--company--project--anno",
       "schema": {
         "fields": [
           {
@@ -140,10 +140,10 @@
             "name": "anno"
           },
           {
-            "name": "meeting_type"
+            "name": "meeting_style"
           },
           {
-            "name": "popularity"
+            "name": "popular_appeal"
           },
           {
             "name": "methodology"
@@ -271,9 +271,9 @@
           "company",
           "project"
         ],
-        "value": "meeting_type",
+        "value": "meeting_style",
         "resources": [
-          "meeting_type--popularity--methodology--by--company--project--anno"
+          "meeting_style--popular_appeal--methodology--by--company--project--anno"
         ]
       },
       {
@@ -284,7 +284,7 @@
         ],
         "value": "methodology",
         "resources": [
-          "meeting_type--popularity--methodology--by--company--project--anno"
+          "meeting_style--popular_appeal--methodology--by--company--project--anno"
         ]
       },
       {
@@ -293,9 +293,9 @@
           "company",
           "project"
         ],
-        "value": "popularity",
+        "value": "popular_appeal",
         "resources": [
-          "meeting_type--popularity--methodology--by--company--project--anno"
+          "meeting_style--popular_appeal--methodology--by--company--project--anno"
         ]
       },
       {
@@ -335,9 +335,9 @@
           "english_speaking",
           "project"
         ],
-        "value": "meeting_type",
+        "value": "meeting_style",
         "resources": [
-          "meeting_type--popularity--methodology--by--company--project--anno"
+          "meeting_style--popular_appeal--methodology--by--company--project--anno"
         ]
       },
       {
@@ -348,7 +348,7 @@
         ],
         "value": "methodology",
         "resources": [
-          "meeting_type--popularity--methodology--by--company--project--anno"
+          "meeting_style--popular_appeal--methodology--by--company--project--anno"
         ]
       },
       {
@@ -357,9 +357,9 @@
           "english_speaking",
           "project"
         ],
-        "value": "popularity",
+        "value": "popular_appeal",
         "resources": [
-          "meeting_type--popularity--methodology--by--company--project--anno"
+          "meeting_style--popular_appeal--methodology--by--company--project--anno"
         ]
       },
       {
