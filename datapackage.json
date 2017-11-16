@@ -126,6 +126,73 @@
       }
     },
     {
+      "path": "ddf--datapoints--lines_of_code--by--company_scale--anno.csv",
+      "name": "lines_of_code--by--company_scale--anno",
+      "schema": {
+        "fields": [
+          {
+            "name": "company"
+          },
+          {
+            "name": "anno"
+          },
+          {
+            "name": "lines_of_code"
+          }
+        ],
+        "primaryKey": [
+          "company",
+          "anno"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--meeting_style--by--company--anno.csv",
+      "name": "meeting_style--by--company--anno",
+      "schema": {
+        "fields": [
+          {
+            "name": "company"
+          },
+          {
+            "name": "anno"
+          },
+          {
+            "name": "meeting_style"
+          }
+        ],
+        "primaryKey": [
+          "company",
+          "anno"
+        ]
+      }
+    },
+    {
+      "path": "ddf--datapoints--meeting_style--by--company--project--anno.csv",
+      "name": "meeting_style--by--company--project--anno",
+      "schema": {
+        "fields": [
+          {
+            "name": "company"
+          },
+          {
+            "name": "project"
+          },
+          {
+            "name": "anno"
+          },
+          {
+            "name": "meeting_style"
+          }
+        ],
+        "primaryKey": [
+          "company",
+          "project",
+          "anno"
+        ]
+      }
+    },
+    {
       "path": "ddf--datapoints--meeting_style--popular_appeal--methodology--by--company--project.csv",
       "name": "meeting_style--popular_appeal--methodology--by--company--project",
       "schema": {
@@ -168,6 +235,33 @@
           }
         ],
         "primaryKey": "company_scale"
+      }
+    },
+    {
+      "path": "ddf--entities--company--english_speaking.csv",
+      "name": "company--english_speaking",
+      "schema": {
+        "fields": [
+          {
+            "name": "company"
+          },
+          {
+            "name": "name"
+          },
+          {
+            "name": "country"
+          },
+          {
+            "name": "region"
+          },
+          {
+            "name": "additional_column"
+          },
+          {
+            "name": "is--english_speaking"
+          }
+        ],
+        "primaryKey": "company"
       }
     },
     {
@@ -253,12 +347,54 @@
       {
         "primaryKey": [
           "anno",
+          "company"
+        ],
+        "value": "meeting_style",
+        "resources": [
+          "meeting_style--by--company--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
           "company",
           "project"
         ],
         "value": "lines_of_code",
         "resources": [
           "lines_of_code--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "company",
+          "project"
+        ],
+        "value": "meeting_style",
+        "resources": [
+          "meeting_style--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "company_scale"
+        ],
+        "value": "meeting_style",
+        "resources": [
+          "meeting_style--by--company--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "company_scale",
+          "project"
+        ],
+        "value": "meeting_style",
+        "resources": [
+          "meeting_style--by--company--project--anno"
         ]
       },
       {
@@ -290,6 +426,17 @@
         "value": "lines_of_code",
         "resources": [
           "lines_of_code--by--company--project--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno",
+          "english_speaking",
+          "project"
+        ],
+        "value": "meeting_style",
+        "resources": [
+          "meeting_style--by--company--project--anno"
         ]
       },
       {
@@ -376,11 +523,30 @@
     "entities": [
       {
         "primaryKey": [
+          "anno"
+        ],
+        "value": "company",
+        "resources": [
+          "lines_of_code--by--company_scale--anno"
+        ]
+      },
+      {
+        "primaryKey": [
+          "anno"
+        ],
+        "value": "lines_of_code",
+        "resources": [
+          "lines_of_code--by--company_scale--anno"
+        ]
+      },
+      {
+        "primaryKey": [
           "company"
         ],
         "value": "additional_column",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -389,7 +555,8 @@
         ],
         "value": "country",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -416,7 +583,8 @@
         ],
         "value": "is--english_speaking",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -425,7 +593,8 @@
         ],
         "value": "name",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -434,7 +603,8 @@
         ],
         "value": "region",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -461,7 +631,8 @@
         ],
         "value": "additional_column",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -470,7 +641,8 @@
         ],
         "value": "country",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -479,7 +651,8 @@
         ],
         "value": "is--english_speaking",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -488,7 +661,8 @@
         ],
         "value": "name",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
@@ -497,7 +671,8 @@
         ],
         "value": "region",
         "resources": [
-          "company"
+          "company",
+          "company--english_speaking"
         ]
       },
       {
